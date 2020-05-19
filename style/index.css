@@ -382,6 +382,12 @@ footer nav a {
     margin: 0 auto;
   }
 
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+  }
 
   .top-content {
     align-content: center;
