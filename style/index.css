@@ -151,9 +151,16 @@ h5 {
 
 p {
   line-height: 1.4;
+  font-size: 1.5rem;
 }
 
+a{
+  padding:0 40px;
+}
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 80%;
   margin: 0 auto;
 }
@@ -199,6 +206,7 @@ p {
   justify-content: center;
 }
 .box {
+  font-size: 1.6rem;
   width: 100%;
 }
 
@@ -258,11 +266,12 @@ header {
 }
 
 header nav {
-  width: 80%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: start;
   align-items: center;
-  /* padding: 20px 2%; */
+  margin: 0 auto;
   font-size: 14px;
 }
 
@@ -275,21 +284,25 @@ header nav a {
 }
 
 .highway {
-  width: 100%;
-  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  height: 200px;
   margin: 0 auto;
+  padding-bottom: 5%;
 }
 
-.logo {
-  padding: 2%;
-}
+ header nav .logo {
+  justify-content: start;
+} 
 footer {
   width: 100%;
   background: black;
 }
 
 footer nav {
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -300,6 +313,7 @@ footer nav {
 footer nav a {
   color: white;
   text-decoration: none;
+  padding: 0 25px;
 }
 
 @media (max-width: 800px) {
@@ -350,8 +364,9 @@ footer nav a {
 
   .header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
+    align-content: center;
   }
 
   .top-content {
